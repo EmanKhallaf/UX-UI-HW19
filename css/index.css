@@ -275,7 +275,7 @@ transform: translateX(-10%);
   transform: translateX(-2%);
 }
 
-.image2, .content2{
+.image2, .content2, .plant1, .plant2{
   opacity: 0;
   transition: opacity .9s ease-in-out,
   transform .9s ease-in-out;
@@ -288,6 +288,8 @@ transform: translateX(0);
 
 .plant1.appear{
   animation: plantsanim 10s infinite;
+  opacity: 1;
+  transform: translateX(0);
 }
 @keyframes plantsanim {
   from {transform: rotatez(-2deg);
@@ -301,9 +303,11 @@ transform: translateX(0);
  }
 }
 .plant2.appear{
-  animation: plantsanim 8s infinite;
+  opacity: 1;
+  transform: translateX(0);
+  animation: plantsanim2 8s infinite;
 }
-@keyframes plantsanim {
+@keyframes plantsanim2 {
   from {transform: rotatez(-3deg);
   }
  50% {
