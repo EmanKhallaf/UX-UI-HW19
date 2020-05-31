@@ -1,0 +1,474 @@
+/* Body Styles */
+body
+{
+  background-color:#F7F7F7;
+  color:#21044D;
+  font-family:"Avenir";
+}
+
+/* Logo */
+.logo 
+{
+  text-align: center;
+  font-size: 25px;
+  padding: 40px;
+  font-family: "Krungthep";
+}
+
+#slogan 
+  {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Avenir";
+    font-style: medium;
+  }
+
+/* Navigation */
+.nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 5px;
+  font-size: 14px;
+  font-family:"Avenir";
+}
+.nav a{
+  padding: 20px;
+  text-decoration: none;
+  color: #21044D;
+}
+
+/* Header */
+.headerBG 
+{
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-color: #21044D;
+  text-align: center;
+  margin-top: -50px;
+  padding: 35px;
+}
+.quote, .quote1
+{
+   color: white;
+   text-align: center;
+   font-size: 28px;
+   margin-top: 0px;
+   margin-left: 5px;
+}
+.quote1{
+  margin-top: -55px;
+}
+
+.semi, .semi2
+{
+  color: goldenrod;
+  font-family: "Lucida";
+  font-size: 60px;  
+}
+.semi
+{
+  margin-left: -390px;
+  margin-top: 30px;
+}
+.semi2
+{
+  margin-left: 410px;
+  margin-top: -60px;
+}
+.author{
+  color: goldenrod;
+  font-size: 12px;
+  margin-left: 300px;
+  margin-top: -10px;
+
+}
+
+/* Casestudy 1*/
+.casestudy1
+{
+  display: grid;
+  padding: 30px;
+  margin-left: 0 auto;
+  justify-content: center;
+  position: relative;
+  grid-template-columns:3% 45% 47%;
+  grid-template-areas: "rectangle content1 image1"
+}
+.BG
+{
+  height: 600px;
+  width: 1600px;
+  background-color: white;
+  margin-top: 45px;
+}
+.image1
+{
+grid-area: image1;
+background-image: url("../images/Knots.png");
+background-repeat: no-repeat;
+background-size: 86%;
+background-position-x: left;
+margin-top: 15px;
+transform: translateX(10%);
+}
+
+.image1, .balloon, .content1{
+opacity: 0;
+transition: opacity .9s ease-in-out,
+transform .9s ease-in-out;
+}
+.image1.appear, .content1.appear {
+opacity: 1;
+transform: translateX(0);
+}
+
+.balloon.appear{
+  opacity: 1;
+  transform: translateX(0);
+  animation: balloonanim 8s infinite;
+}
+
+.balloon{
+  background-image: url("../images/balloon.png");
+  grid-area: image1;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: right;
+  transform: translateX(10%);
+}
+@keyframes balloonanim {
+  from {
+    transform: rotatez(-2deg); 
+    transform: translatex(15px);
+  }
+  25% {
+    transform: translatey(-10px);
+  }
+  50%{
+    transform: rotatez(2deg)
+  }
+  75%{
+    transform: rotatez(-3deg);
+  }
+  to {
+    transform: rotatez(-2deg); 
+    transform: translatex(15px);
+  }
+}
+.rectangle
+{
+grid-area: rectangle;
+background-color: #E75B75;
+width:47.97px;
+height: 186.8200px;
+margin-top: -480px;
+margin-left: -27px;
+}
+
+.content1
+{
+grid-area: content1;
+align-self: top;
+margin-top: 100px;
+margin-left: -25px;
+transform: translateX(-10%);
+}
+
+.role, .head, .head2, .under, .paragraph, .button
+{
+  margin-left: 120px;
+}
+.head
+{
+  margin-top: 3px;
+  font-size: 44px; 
+}
+.head2
+{
+  margin-top: -25px;
+  font-size: 23px; 
+}
+.under
+{
+  width: 84px;
+  height: 3px;
+  background-color: #21044D;
+  margin-top: 40px;
+}
+.paragraph
+{
+  margin-top: 60px;
+  font-size: 18px; 
+  width: 460px;
+}
+.button
+{
+ border-width: 2px;
+ border-color: rgb(39, 4, 92);
+ border-style: solid;
+ background-color: white;
+ width: 241.85px;
+ height: 50.25px;
+ color: #21044D;
+ font-size: 12px;
+ margin-top: 35px;
+ transition: .3s;
+} 
+.button:hover{
+  background-color: rgb(39, 4, 92);
+  color: white;
+}
+
+/* Casestudy 2*/
+.casestudy2
+{
+  display: grid;
+  padding: 30px;
+  grid-template-columns:47% 50% 3%;
+  grid-template-areas: "image2 content2 rectangle2";
+}
+.BG2
+{
+  height: 600px;
+  width: 1600px;
+  background-color: white;
+  margin-top: 15px;
+  margin-left: -1620px;
+}
+
+.image2, .purpleplant, .plant2, .laptop, .coins, .coin, .man2, .man{
+  grid-area: image2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -10px;
+  transform: translateX(10%);
+}
+.purpleplant{
+  background-image: url("../images/plant1.png");
+  transform: translateX(5%);
+}
+.plant2{
+  background-image: url("../images/plant2.png");
+  transform: translateX(5%);
+}
+.laptop{
+  background-image: url("../images/laptop.png");
+}
+.coins{
+  background-image: url("../images/coins.png");
+  transform: translateX(-2%);
+  transition-delay: .9s;
+}
+.coin{
+  background-image: url("../images/coin.png");
+  transform: translateX(-2%);
+}
+.man2{
+  background-image: url("../images/man2.png");
+}
+.man{
+  background-image: url("../images/man.png");
+  transform: translateX(-2%);
+}
+
+.image2, .content2, .plant1, .plant2{
+  opacity: 0;
+  transition: opacity .9s ease-in-out,
+  transform .9s ease-in-out;
+}
+.image2.appear,
+.content2.appear {
+opacity: 1;
+transform: translateX(0);
+}
+
+.plant1.appear{
+  animation: plantsanim 10s infinite;
+  opacity: 1;
+  transform: translateX(0);
+}
+@keyframes plantsanim {
+  from {transform: rotatez(-2deg);
+  }
+ 50% {
+  transform: rotatez(2deg);
+
+ }
+ to{
+  transform: rotatez(-2deg);
+ }
+}
+.plant2.appear{
+  opacity: 1;
+  transform: translateX(0);
+  animation: plantsanim2 8s infinite;
+}
+@keyframes plantsanim2 {
+  from {transform: rotatez(-3deg);
+  }
+ 50% {
+  transform: rotatez(3deg);
+
+ }
+ to{
+  transform: rotatez(-3deg);
+ }
+}
+
+.rectangle2
+{
+grid-area: rectangle2;
+background-color: #6165D7;
+width:47.97px;
+height: 186.8200px;
+margin-top: -460px;
+margin-left: 790px;
+
+}
+.content2
+{
+grid-area: content2;
+margin-top: 70px;
+transform: translateX(-10%);
+}
+
+
+/* Casestudy 3*/
+.casestudy3
+{
+  display: grid;
+  padding: 30px;
+  justify-content: center;
+  grid-template-columns:3% 52% 39%;
+  grid-template-areas: "rectangle3 content1 image3"
+}
+.image3
+{
+grid-area: image3;
+background-image: url("../images/pointbank.png");
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: -10px;
+transform: translateX(10%);
+}
+.image3, .content{
+  opacity: 0;
+  transition: opacity .9s ease-in-out,
+  transform .9s ease-in-out;
+}
+.image3.appear,
+.content.appear {
+opacity: 1;
+transform: translateX(0);
+}
+
+.rectangle3
+{
+grid-area: rectangle2;
+background-color: #F6935C;
+width:47.97px;
+height: 186.8200px;
+margin-top: -480px;
+margin-left: -27px;
+}
+
+.form-group{
+justify-items: right;
+text-align: center;
+font-size: 200%;
+}
+
+/* Media Query*/
+@media only screen and (max-width: 1000px)
+{ 
+   .BG{
+   width: 850px;
+  }
+   .content2{
+   margin-left: -100px;
+  }
+  .rectangle, .rectangle3{
+  margin-left: 52px;
+  width: 5%;
+  }
+  .rectangle2{
+  margin-left: 515px;;
+  width: 5%;
+  }
+  .content{
+  margin-left: -80px;
+}
+}
+
+@media only screen and (max-width: 600px)
+{
+  .casestudy1
+  {
+    grid-template-rows: 350px 300px; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image1"
+      "content";
+  }
+     .casestudy2{
+      grid-template-rows: 350px 300px; 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "image2"
+        "content2";
+       }
+  .casestudy3
+  {
+    grid-template-rows: 320px 300px; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image3"
+      "content";
+  }
+.rectangle, .rectangle2, .rectangle3
+  {
+    display: none;
+  }
+  .role{
+    font-size: 14px;
+    margin-top: 35px;
+  }
+  .head{
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  .head2{
+    font-size: 18px;
+  }
+  .under{
+    scale: 90%;
+    margin-top: 30px;
+  }
+  .paragraph{
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .content{
+    margin-left: -90px;
+    margin-top: auto;
+  }
+  .content2{
+    margin-left: -90px;
+    margin-top: auto;
+  }
+  .BG{
+  width: auto;
+  height: 750px;
+  margin-top: -570px;
+  }
+  .BG2{
+    width: auto;
+    height: 780px;
+    margin-top: -600px;
+    margin-left: 7px;
+    }
+}
