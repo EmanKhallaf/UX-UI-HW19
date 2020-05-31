@@ -240,14 +240,14 @@ transform: translateX(-10%);
   margin-left: -1620px;
 }
 
-.image2, .plant1, .plant2, .laptop, .coins, .coin, .man2, .man{
+.image2, .purpleplant, .plant2, .laptop, .coins, .coin, .man2, .man{
   grid-area: image2;
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: -10px;
   transform: translateX(10%);
 }
-.plant1{
+.purpleplant{
   background-image: url("../images/plant1.png");
   transform: translateX(5%);
 }
